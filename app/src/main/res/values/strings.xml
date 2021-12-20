@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Party Planner</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login">login</string>
+    <string name="sign_up">sign up</string>
+    <string name="email">email</string>
+    <string name="fullname">full name</string>
+    <string name="title_activity_main_panel">MainPanel</string>
+    <string name="parties">PARTIES</string>
+    <string name="invites">INVITES</string>
+    <string name="friends">FRIENDS</string>
+    <string name="party_planner">Party Planner</string>
+    <string name="log_out">Log Out</string>
+    <string name="personal_info">personal info</string>
+    <string name="notifications">notifications</string>
+    <string name="help">help</string>
+    <string name="dots">...</string>
+    <string name="add_new_event">Add new event</string>
+    <string name="party_title">Party Title</string>
+    <string name="party_description">Party Description</string>
+    <string name="party_theme">Party Theme</string>
+    <string name="address">Address</string>
+    <string name="accept">accept</string>
+</resources>
