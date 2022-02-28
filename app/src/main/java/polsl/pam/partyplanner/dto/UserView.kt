@@ -1,6 +1,6 @@
 package polsl.pam.partyplanner.dto
 
-class User {
+class UserView {
     lateinit var login: String
     lateinit var fullName: String
 

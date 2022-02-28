@@ -59,21 +59,32 @@ class Login : AppCompatActivity() {
     }
 
     private fun loginUser(email: String, password: String) {
-        auth.signInWithEmailAndPassword(email, password)
-            .addOnCompleteListener(this) { task ->
-                if (task.isSuccessful) {
-                    Log.d(TAG, "signInWithEmail:success")
-                    startActivity(Intent(this, MainPanel::class.java))
-                } else {
+        if(validateFields()) {
+            auth.signInWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this) { task ->
+                    if (task.isSuccessful) {
+                        Log.d(TAG, "signInWithEmail:success")
+                        startActivity(Intent(this, MainPanel::class.java))
+                    } else {
 
-                    Log.w(TAG, "signInWithEmail:failure", task.exception)
-                    Toast.makeText(
-                        baseContext,
-                        "Authentication failed. Check your input.",
-                        Toast.LENGTH_SHORT
-                    ).show()
+                        Log.w(TAG, "signInWithEmail:failure", task.exception)
+                        Toast.makeText(
+                            baseContext,
+                            "Authentication failed. Check your input.",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                    }
                 }
-            }
+        }
+    }
+
+    private fun validateFields(): Boolean {
+        if (textPassword.text.isNullOrBlank() || textEmail.text.isNullOrBlank()) {
+            Toast.makeText(this, "Fill all fields!", Toast.LENGTH_LONG).show()
+            return false
+        }
+
+        return true
     }
 
     companion object {

@@ -49,7 +49,7 @@
 
 
         <Button
-            android:id="@+id/buttonAccept"
+            android:id="@+id/buttonDecline"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

@@ -13,6 +13,39 @@
         android:theme="@style/Theme.PartyPlanner"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".FundsList"
+            android:exported="false" />
+        <activity
+            android:name=".FundsListOwner"
+            android:exported="false" />
+        <activity
+            android:name=".UserInfo"
+            android:exported="false" />
+        <activity
+            android:name=".EventInvite"
+            android:exported="false" />
+        <activity
+            android:name=".FriendInvite"
+            android:exported="false" />
+        <activity
+            android:name=".GuestListOwner"
+            android:exported="false" />
+        <activity
+            android:name=".GuestList"
+            android:exported="false" />
+        <activity
+            android:name=".InviteGuests"
+            android:exported="true" />
+        <activity
+            android:name=".AddFriend"
+            android:exported="true" />
+        <activity
+            android:name=".EditEvent"
+            android:exported="true" />
+        <activity
+            android:name=".EventInfo"
+            android:exported="true" />
+        <activity
             android:name=".Event"
             android:exported="true" />
         <activity

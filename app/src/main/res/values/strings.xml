@@ -24,4 +24,33 @@
     <string name="party_theme">Party Theme</string>
     <string name="address">Address</string>
     <string name="accept">accept</string>
+    <string name="event_image_content_description">event_image_content_description</string>
+    <string name="event_name">event_name</string>
+    <string name="date">Date</string>
+    <string name="title">Title</string>
+    <string name="image">image</string>
+    <string name="planning">PLANNING</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_friends">Add Friends</string>
+    <string name="friend_name">friend_name</string>
+    <string name="user_name">User Name</string>
+    <string name="add_new_friend">Add New Friend</string>
+    <string name="find">FIND</string>
+    <string name="guest_list">Guest List</string>
+    <string name="add_guest">Add Guest</string>
+    <string name="nothing_to_see_here_yet">Nothing to see here yet...</string>
+    <string name="new_type_invite">new TYPE invite!</string>
+    <string name="decline">decline</string>
+    <string name="new_friend_invite">New friend invite!</string>
+    <string name="user_details">User details</string>
+    <string name="back">back</string>
+    <string name="organizer">Organizer</string>
+    <string name="bank_info">Bank info</string>
+    <string name="hosted_by">Hosted By</string>
+    <string name="fund_title">FUND_TITLE</string>
+    <string name="value">VALUE</string>
+    <string name="bank_account_number">Bank Account Number</string>
+    <string name="funds">Funds</string>
+    <string name="add_fund">Add fund</string>
 </resources>

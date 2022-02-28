@@ -8,67 +8,81 @@
     tools:context=".MainPanel">
 
 
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonProfile"
+            android:layout_width="90dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:padding="0dp"
+            app:backgroundTint="@color/primary_orange"
+            app:cornerRadius="100dp"
+            app:icon="@drawable/ic_baseline_person_24"
+            app:iconGravity="textStart"
+            app:iconPadding="0dp"
+            app:iconSize="80dp"
+            app:iconTint="@color/secondary_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:rippleColor="@color/secondary_black"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
     <FrameLayout
-        android:id="@+id/flFragment"
+        android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@id/header">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+<!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent">-->
 
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/buttonProfile"
-                android:layout_width="90dp"
-                android:layout_height="100dp"
-                android:layout_marginStart="8dp"
-                android:layout_marginTop="8dp"
-                android:padding="0dp"
-                app:backgroundTint="@color/primary_orange"
-                app:cornerRadius="100dp"
-                app:icon="@drawable/ic_baseline_person_24"
-                app:iconGravity="textStart"
-                app:iconPadding="0dp"
-                app:iconSize="80dp"
-                app:iconTint="@color/secondary_black"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:rippleColor="@color/secondary_black"
-                tools:ignore="SpeakableTextPresentCheck" />
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/recyclerview"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="0dp"-->
+<!--                app:layout_constraintBottom_toBottomOf="parent"-->
+<!--                app:layout_constraintEnd_toEndOf="parent"-->
+<!--                app:layout_constraintStart_toStartOf="parent"-->
+<!--                app:layout_constraintTop_toTopOf="parent"-->
+<!--                tools:itemCount="5"-->
+<!--                tools:listitem="@layout/event_item" />-->
+<!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/recyclerview"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:itemCount="5"
-            tools:listitem="@layout/card_view_design" />
 
-        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-            android:id="@+id/buttonAddEvent"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:layout_margin="16dp"
-            android:fontFamily="@font/fredoka_one"
-            android:text="@string/add_new_event"
-            android:textAlignment="center"
-            android:textColor="@color/background_blue"
-            android:textSize="24sp"
-            app:backgroundTint="@color/secondary_white"
-            app:icon="@drawable/ic_baseline_add_circle_24"
-            app:iconGravity="textStart"
-            app:iconTint="@color/background_blue"
-            app:shapeAppearanceOverlay="@style/ThemeFabShape" />
+<!--        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton-->
+<!--            android:id="@+id/buttonAddEvent"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:layout_margin="16dp"-->
+<!--            android:fontFamily="@font/fredoka_one"-->
+<!--            android:text="@string/add_new_event"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textColor="@color/background_blue"-->
+<!--            android:textSize="24sp"-->
+<!--            app:backgroundTint="@color/secondary_white"-->
+<!--            app:icon="@drawable/ic_baseline_add_circle_24"-->
+<!--            app:iconGravity="textStart"-->
+<!--            app:iconTint="@color/background_blue"-->
+<!--            app:shapeAppearanceOverlay="@style/ThemeFabShape" />-->
 
 
     </FrameLayout>
@@ -81,6 +95,8 @@
         app:itemIconTint="@color/tab_selector"
         app:itemTextColor="@color/tab_selector"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:menu="@menu/bottom_navigation_menu" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

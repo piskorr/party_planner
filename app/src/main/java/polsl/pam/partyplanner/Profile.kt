@@ -16,13 +16,14 @@ import com.google.firebase.database.ValueEventListener
 import com.google.firebase.database.ktx.database
 import com.google.firebase.database.ktx.getValue
 import com.google.firebase.ktx.Firebase
-import polsl.pam.partyplanner.dto.User
+import polsl.pam.partyplanner.dto.UserView
 
 
 class Profile : AppCompatActivity() {
 
     private lateinit var database: DatabaseReference
     lateinit var buttonLogout: MaterialButton
+    lateinit var buttonProfile: MaterialButton
     lateinit var textFullName: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,13 +38,13 @@ class Profile : AppCompatActivity() {
         setContentView(R.layout.activity_profile)
 
         buttonLogout = findViewById(R.id.buttonLogout)
+        buttonProfile = findViewById(R.id.buttonPersonalInformation)
         textFullName = findViewById(R.id.textFullName)
         database = Firebase.database.reference
 
-
         val userListener = object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
-                val user = dataSnapshot.getValue<User>()
+                val user = dataSnapshot.getValue<UserView>()
                 textFullName.text = user?.fullName
 
             }
@@ -56,11 +57,15 @@ class Profile : AppCompatActivity() {
         database.child("users").child(Firebase.auth.currentUser!!.uid)
             .addListenerForSingleValueEvent(userListener)
 
-
-
         buttonLogout.setOnClickListener {
             Firebase.auth.signOut()
             startActivity(Intent(this, Login::class.java))
+        }
+
+        buttonProfile.setOnClickListener {
+            val intent = Intent(baseContext, UserInfo::class.java)
+            intent.putExtra("user_uid", Firebase.auth.currentUser!!.uid)
+            startActivity(intent)
         }
 
     }

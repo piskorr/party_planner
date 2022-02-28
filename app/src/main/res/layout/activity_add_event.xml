@@ -59,7 +59,8 @@
                 android:id="@+id/textTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableEnd="@drawable/ic_baseline_person_24"
+                android:maxLength="20"
+                android:drawableEnd="@drawable/ic_baseline_title_24"
                 android:fontFamily="@font/fredoka_one"
                 tools:targetApi="jelly_bean" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -83,19 +84,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:lines="5"
-                android:drawableEnd="@drawable/ic_baseline_person_24"
+                android:drawableEnd="@drawable/ic_baseline_description_24"
+                android:gravity="start"
                 android:fontFamily="@font/fredoka_one"
                 tools:targetApi="jelly_bean" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayoutTheme"
+            android:id="@+id/textInputLayoutDate"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginTop="10dp"
-            android:hint="@string/party_theme"
+            android:hint="@string/date"
             app:boxBackgroundColor="@color/secondary_white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -103,10 +105,12 @@
 
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/textTheme"
+                android:id="@+id/textDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:drawableEnd="@drawable/ic_baseline_person_24"
+                android:clickable="false"
+                android:focusableInTouchMode="false"
+                android:drawableEnd="@drawable/ic_baseline_date_range_24"
                 android:fontFamily="@font/fredoka_one"
                 tools:targetApi="jelly_bean" />
         </com.google.android.material.textfield.TextInputLayout>
@@ -122,20 +126,46 @@
             app:boxBackgroundColor="@color/secondary_white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutTheme">
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutDate">
 
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/textAddress"
                 android:layout_width="match_parent"
+                android:maxLength="50"
                 android:layout_height="wrap_content"
-                android:drawableEnd="@drawable/ic_baseline_person_24"
+                android:drawableEnd="@drawable/ic_baseline_place_24"
+                android:fontFamily="@font/fredoka_one"
+                tools:targetApi="jelly_bean" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutBankInfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/bank_account_number"
+            app:boxBackgroundColor="@color/secondary_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutAddress">
+
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textBankInfo"
+                android:inputType="number"
+                android:maxLength="17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_baseline_account_balance_24"
                 android:fontFamily="@font/fredoka_one"
                 tools:targetApi="jelly_bean" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/buttonAccept"
+            android:id="@+id/buttonDecline"
             style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -149,7 +179,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutAddress" />
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutBankInfo" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

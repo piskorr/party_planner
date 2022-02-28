@@ -4,23 +4,52 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/drawable/button_shape.xml" value="0.3828125" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/drawable/ic_baseline_notifications_24.xml" value="0.3828125" />
         <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/drawable/ic_baseline_people_24.xml" value="0.3828125" />
         <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.3828125" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout-v26/event_card_layout.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/activity_add_evenent.xml" value="0.2753623188405797" />
         <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/activity_add_event.xml" value="0.25" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/activity_add_friend.xml" value="0.3229166666666667" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/activity_edit_event.xml" value="0.28489583333333335" />
         <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/activity_event.xml" value="0.265625" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/activity_event_info.xml" value="0.35733695652173914" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/activity_event_invite.xml" value="0.25" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/activity_friend_invite.xml" value="0.25" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/activity_frind_invitation.xml" value="0.17831813576494426" />
         <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/activity_fullscreen.xml" value="0.3654891304347826" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/activity_fund_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/activity_funds_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/activity_funds_list_owner.xml" value="0.3015625" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/activity_guest_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/activity_guest_list_owner.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/activity_invite_friends.xml" value="0.34057971014492755" />
         <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/activity_main.xml" value="0.3654891304347826" />
         <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/activity_main_panel.xml" value="0.25" />
         <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/activity_profile.xml" value="0.2578125" />
         <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/activity_sign_up.xml" value="0.33" />
         <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/activity_splash_screen.xml" value="0.2515625" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/activity_user_info.xml" value="0.33" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/add_friend_item.xml" value="0.3451086956521739" />
         <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/event_card_layout.xml" value="0.264945652173913" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/event_item.xml" value="0.25" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/fragment_friends.xml" value="0.2703125" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/fragment_invites.xml" value="0.2703125" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/fragment_parties.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/fragment_planning.xml" value="0.2703125" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/friend_item.xml" value="0.3491847826086957" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/fund_item.xml" value="0.3015625" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/invite_item.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/layout/text_row_item.xml" value="0.26132246376811596" />
         <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.284375" />
         <entry key="..\:/Users/piskorr/Documents/Repos/party_planner/app/src/main/res/menu/row_layout.xml" value="0.36666666666666664" />
       </map>
     </option>
+  </component>
+  <component name="JavadocGenerationManager">
+    <option name="OUTPUT_DIRECTORY" value="$USER_HOME$/Desktop" />
+    <option name="OPTION_SCOPE" value="package" />
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />

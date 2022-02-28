@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginBottom="5dp"
+    app:cardBackgroundColor="@color/secondary_white"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/imageview"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/image"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_baseline_bookmark_add_24"
+            app:tint="@color/secondary_black" />
+
+        <TextView
+            android:id="@+id/invite_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/fredoka_one"
+            android:text="@string/new_type_invite"
+            android:textColor="@color/background_blue"
+            android:textSize="25sp"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/friend_name"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_margin="8dp"-->
+        <!--            android:text="@string/friend_name"-->
+        <!--            android:textAppearance="?attr/textAppearanceHeadline5"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintStart_toEndOf="@+id/imageview"-->
+        <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
