@@ -17,27 +17,27 @@ Project is created with:
 	
 ## Screenshots
 <p align="center">
-  <img src="assets/1.png" alt="J" width="500"/>
+  <img src="assets/1.png" alt="J" width="300"/>
 </p>
 <p align="center">
-  <img src="assets/7.png" alt="J" width="500"/>
+  <img src="assets/7.png" alt="J" width="300"/>
 </p>
 <p align="center">
-  <img src="assets/2.png" alt="J" width="500"/>
+  <img src="assets/2.png" alt="J" width="300"/>
 </p>
 <p align="center">
-  <img src="assets/3.png" alt="J" width="500"/>
+  <img src="assets/3.png" alt="J" width="300"/>
 </p>
 <p align="center">
-  <img src="assets/4.png" alt="J" width="500"/>
+  <img src="assets/4.png" alt="J" width="300"/>
 </p>
 <p align="center">
-  <img src="assets/6.png" alt="J" width="500"/>
+  <img src="assets/6.png" alt="J" width="300"/>
 </p>
 <p align="center">
-  <img src="assets/8.png" alt="J" width="500"/>
+  <img src="assets/8.png" alt="J" width="300"/>
 </p>
 <p align="center">
-  <img src="assets/5.png" alt="J" width="500"/>
+  <img src="assets/5.png" alt="J" width="300"/>
 </p>
 
